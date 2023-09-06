@@ -28,9 +28,19 @@ function atualizarTabela() {
   alunosData.forEach((aluno, index) => {
     var tr = document.createElement("tr");
 
+    // Adicionar classes com base no status
+    if (aluno.nivel === "Avançado") {
+      tr.className = "avancado";
+    } else if (aluno.nivel === "Intermediário") {
+      tr.className = "intermediario";
+    } else if (aluno.nivel === "Iniciante") {
+      tr.className = "iniciante";
+    }
+
     // Coluna da posição (ranking)
     var tdPosicao = document.createElement("td");
     tdPosicao.innerText = index + 1; // Posição começa em 1, não 0
+    tdPosicao.className = "posicao-coluna";
     tr.appendChild(tdPosicao);
 
     // Coluna do nome

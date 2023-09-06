@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 section, footer {
@@ -11,6 +11,8 @@ section, footer {
 table {
     width: 100%;
     border-collapse: collapse;
+    font-size: 22px;
+    text-align: center;
 }
 
 th, td {
@@ -34,7 +36,7 @@ th {
 }
 
 #universityLogo {
-    width: 150px;   /* Ajuste conforme necessário */
+    width: 300px;   /* Ajuste conforme necessário */
     margin: 10px 0;
 }
 
@@ -47,4 +49,29 @@ header {
     background-color: #ffffff; /* Exemplo de cor de fundo, ajuste se desejar */
 }
 
+table td {
+    max-width: 100px;   /* Ajuste conforme necessário */
+    overflow: hidden;   /* Isso esconderá o conteúdo que excede a largura máxima */
+    text-overflow: ellipsis;  /* Isso adicionará '...' se o conteúdo for cortado */
+    white-space: nowrap;      /* Isso impedirá que o conteúdo quebre para a próxima linha */
+}
 
+.avancado {
+    background-color: rgb(203, 255, 203);  /* Verde para Avançado */
+}
+
+.intermediario {
+    background-color: rgb(218, 231, 255);   /* Azul para Intermediário */
+}
+
+.iniciante {
+    background-color: rgb(254, 232, 192); /* Laranja para Iniciante */
+}
+
+.posicao-coluna {
+    width: 50px;          /* Ajuste este valor conforme desejado */
+    max-width: 50px;      /* Garante que a célula não expanda além deste valor */
+    overflow: hidden;     /* Esconde qualquer conteúdo que exceda a largura */
+    text-overflow: ellipsis;  /* Adiciona '...' se o conteúdo for cortado */
+    white-space: nowrap;      /* Impede que o conteúdo quebre para a próxima linha */
+}
