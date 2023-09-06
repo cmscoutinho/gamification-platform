@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+section, footer {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.achievement {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+}
+
+.achievement h3 {
+    margin-top: 0;
+}
+
+#universityLogo {
+    width: 150px;   /* Ajuste conforme necessário */
+    margin: 10px 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Alinha horizontalmente ao centro */
+    align-items: center;      /* Alinha verticalmente ao centro */
+    height: auto;            /* Exemplo de altura, ajuste conforme necessário */
+    background-color: #ffffff; /* Exemplo de cor de fundo, ajuste se desejar */
+}
+
+
