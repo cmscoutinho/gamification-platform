@@ -77,7 +77,7 @@ table td {
 }
 
 .nome-coluna {
-    width: 10px;          /* Ajuste este valor conforme desejado */
+    width: 100px;          /* Ajuste este valor conforme desejado */
     max-width: 100px;      /* Garante que a célula não expanda além deste valor */
     
     
