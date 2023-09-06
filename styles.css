@@ -11,7 +11,7 @@ section, footer {
 table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 22px;
+    font-size: 15px;
     text-align: center;
 }
 
@@ -69,8 +69,8 @@ table td {
 }
 
 .posicao-coluna {
-    width: 50px;          /* Ajuste este valor conforme desejado */
-    max-width: 50px;      /* Garante que a célula não expanda além deste valor */
+    width: 5px;          /* Ajuste este valor conforme desejado */
+    max-width: 5px;      /* Garante que a célula não expanda além deste valor */
     overflow: hidden;     /* Esconde qualquer conteúdo que exceda a largura */
     text-overflow: ellipsis;  /* Adiciona '...' se o conteúdo for cortado */
     white-space: nowrap;      /* Impede que o conteúdo quebre para a próxima linha */
