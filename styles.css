@@ -44,7 +44,7 @@ th {
 }
 
 #universityLogo {
-  width: 300px;
+  width: 150px;
   margin: 10px 0;
 }
 
@@ -98,4 +98,3 @@ table td {
     -webkit-overflow-scrolling: touch;
   }
 }
-
