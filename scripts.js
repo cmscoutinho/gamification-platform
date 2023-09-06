@@ -1,20 +1,40 @@
+function determinarNivel(nota) {
+  if (nota <= 1000) {
+    return "Novato";
+  } else if (nota > 1000 && nota <= 1800) {
+    return "Mestre";
+  } else {
+    return "Lorde";
+  }
+}
+
+function atualizarNiveisDosAlunos(alunos) {
+  for (let aluno of alunos) {
+    aluno.nivel = determinarNivel(aluno.pontos);
+  }
+}
+
 // Simulação de dados dos alunos
 var alunosData = [
-  { nome: "João Silva", pontos: 1500, nivel: "Intermediário" },
-  { nome: "Maria Oliveira", pontos: 1200, nivel: "Intermediário" },
-  { nome: "Pedro Alves", pontos: 900, nivel: "Iniciante" },
-  { nome: "Ana Pereira", pontos: 2000, nivel: "Avançado" },
-  { nome: "Lucas Costa", pontos: 1850, nivel: "Avançado" },
-  { nome: "Luiza Lima", pontos: 1000, nivel: "Iniciante" },
-  { nome: "Gustavo Santos", pontos: 1650, nivel: "Intermediário" },
-  { nome: "Fernanda Teixeira", pontos: 1400, nivel: "Intermediário" },
-  { nome: "Rafael Barros", pontos: 2100, nivel: "Avançado" },
-  { nome: "Isabela Soares", pontos: 950, nivel: "Iniciante" },
-  { nome: "Gabriel Rocha", pontos: 1900, nivel: "Avançado" },
-  { nome: "Juliana Freitas", pontos: 1350, nivel: "Intermediário" },
-  { nome: "Marcelo Menezes", pontos: 800, nivel: "Iniciante" },
-  { nome: "Bruna Cardoso", pontos: 1550, nivel: "Intermediário" },
+  { nome: "João Silva", pontos: 1500 },
+  { nome: "Maria Oliveira", pontos: 1200 },
+  { nome: "Pedro Alves", pontos: 900 },
+  { nome: "Ana Pereira", pontos: 2000 },
+  { nome: "Lucas Costa", pontos: 1850 },
+  { nome: "Luiza Lima", pontos: 1000 },
+  { nome: "Gustavo Santos", pontos: 1650 },
+  { nome: "Fernanda Teixeira", pontos: 1400 },
+  { nome: "Rafael Barros", pontos: 2100 },
+  { nome: "Isabela Soares", pontos: 950 },
+  { nome: "Gabriel Rocha", pontos: 1900 },
+  { nome: "Juliana Freitas", pontos: 1350 },
+  { nome: "Marcelo Menezes", pontos: 800 },
+  { nome: "Bruna Cardoso", pontos: 1550 },
 ];
+
+atualizarNiveisDosAlunos(alunosData);
+
+// Supondo que você tenha um array 'alunosData' como mencionado anteriormente
 
 // Função para atualizar a tabela
 function atualizarTabela() {
@@ -29,11 +49,11 @@ function atualizarTabela() {
     var tr = document.createElement("tr");
 
     // Adicionar classes com base no status
-    if (aluno.nivel === "Avançado") {
+    if (aluno.nivel === "Lorde") {
       tr.className = "avancado";
-    } else if (aluno.nivel === "Intermediário") {
+    } else if (aluno.nivel === "Mestre") {
       tr.className = "intermediario";
-    } else if (aluno.nivel === "Iniciante") {
+    } else if (aluno.nivel === "Novato") {
       tr.className = "iniciante";
     }
 
