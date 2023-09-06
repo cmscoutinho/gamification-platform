@@ -66,6 +66,7 @@ function atualizarTabela() {
     // Coluna do nome
     var tdNome = document.createElement("td");
     tdNome.innerText = aluno.nome;
+    tdPosicao.className = "nome-coluna";
     tr.appendChild(tdNome);
 
     // Coluna dos pontos

@@ -76,6 +76,14 @@ table td {
     white-space: nowrap;      /* Impede que o conteúdo quebre para a próxima linha */
 }
 
+.nome-coluna {
+    width: 15px;          /* Ajuste este valor conforme desejado */
+    max-width: 15px;      /* Garante que a célula não expanda além deste valor */
+    overflow: hidden;     /* Esconde qualquer conteúdo que exceda a largura */
+    text-overflow: ellipsis;  /* Adiciona '...' se o conteúdo for cortado */
+    white-space: nowrap;      /* Impede que o conteúdo quebre para a próxima linha */
+}
+
 @media (max-width: 768px) {
     table {
         display: block;
