@@ -75,3 +75,12 @@ table td {
     text-overflow: ellipsis;  /* Adiciona '...' se o conteúdo for cortado */
     white-space: nowrap;      /* Impede que o conteúdo quebre para a próxima linha */
 }
+
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        width: 100%; /* garante que a tabela preencha toda a largura disponível */
+        -webkit-overflow-scrolling: touch; /* suaviza a rolagem em dispositivos iOS */
+    }
+}
