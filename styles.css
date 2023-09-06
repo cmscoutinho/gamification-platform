@@ -12,7 +12,7 @@ footer {
 
 section,
 footer {
-    border: 1px solid #ccc;
+  border: 1px solid #ccc;
 }
 
 table {
@@ -98,3 +98,4 @@ table td {
     -webkit-overflow-scrolling: touch;
   }
 }
+
