@@ -1,94 +1,101 @@
 body {
-    font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
-section, footer {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ccc;
+header,
+section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header,
+section,
+footer {
+  /*margin: 20px;*/
+  padding: 20px;
+  border: 1px solid #ccc;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 14px;
-    text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  text-align: center;
 }
 
-th, td {
-    border: 1px solid #ddd;
-    padding: 8px;
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
 
 th {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 .achievement {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #e0e0e0;
-    background-color: #f9f9f9;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+  background-color: #f9f9f9;
 }
 
 .achievement h3 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 #universityLogo {
-    width: 300px;   /* Ajuste conforme necessário */
-    margin: 10px 0;
+  width: 300px;
+  margin: 10px 0;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;  /* Alinha horizontalmente ao centro */
-    align-items: center;      /* Alinha verticalmente ao centro */
-    height: auto;            /* Exemplo de altura, ajuste conforme necessário */
-    background-color: #ffffff; /* Exemplo de cor de fundo, ajuste se desejar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background-color: #ffffff;
 }
 
 table td {
-    max-width: 100px;   /* Ajuste conforme necessário */
-    overflow: hidden;   /* Isso esconderá o conteúdo que excede a largura máxima */
-    text-overflow: ellipsis;  /* Isso adicionará '...' se o conteúdo for cortado */
-    white-space: nowrap;      /* Isso impedirá que o conteúdo quebre para a próxima linha */
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .avancado {
-    background-color: rgb(203, 255, 203);  /* Verde para Avançado */
+  background-color: rgb(203, 255, 203);
 }
 
 .intermediario {
-    background-color: rgb(218, 231, 255);   /* Azul para Intermediário */
+  background-color: rgb(218, 231, 255);
 }
 
 .iniciante {
-    background-color: rgb(254, 232, 192); /* Laranja para Iniciante */
+  background-color: rgb(254, 232, 192);
 }
 
 .posicao-coluna {
-    width: 5px;          /* Ajuste este valor conforme desejado */
-    max-width: 5px;      /* Garante que a célula não expanda além deste valor */
-    overflow: hidden;     /* Esconde qualquer conteúdo que exceda a largura */
-    text-overflow: ellipsis;  /* Adiciona '...' se o conteúdo for cortado */
-    white-space: nowrap;      /* Impede que o conteúdo quebre para a próxima linha */
+  width: 5px;
+  max-width: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .nome-coluna {
-    width: 100px;          /* Ajuste este valor conforme desejado */
-    max-width: 100px;      /* Garante que a célula não expanda além deste valor */
-    
-    
-    white-space: nowrap;      /* Impede que o conteúdo quebre para a próxima linha */
+  width: 100px;
+  max-width: 100px;
+  white-space: nowrap;
 }
 
 @media (max-width: 768px) {
-    table {
-        display: block;
-        overflow-x: auto;
-        width: 100%; /* garante que a tabela preencha toda a largura disponível */
-        -webkit-overflow-scrolling: touch; /* suaviza a rolagem em dispositivos iOS */
-    }
+  table {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+  }
 }
