@@ -3,17 +3,16 @@ body {
 }
 
 header,
-section {
-    width: 80%;
-    margin: 0 auto;
-}
-
-header,
 section,
 footer {
-  /*margin: 20px;*/
+  width: 80%;
+  margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
+}
+
+section,
+footer {
+    border: 1px solid #ccc;
 }
 
 table {
