@@ -15,6 +15,10 @@ footer {
   border: 1px solid #ccc;
 }
 
+.centered-button {
+  padding: 10px 20px; /* Adiciona um pouco de espaço interno ao botão */
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
