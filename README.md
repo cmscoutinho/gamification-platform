@@ -21,7 +21,7 @@ Este repositório contém uma plataforma de gamificação desenvolvida para ser 
 
 1. **Clone o Repositório:** 
    ```bash
-   git clone https://github.com/seu-usuario/seu-repo.git
+   git clone https://github.com/cmscoutinho/gamification-platform.git
    cd seu-repo
 
 2. Abra o Arquivo index.html em um Navegador: Para visualizar a interface de gamificação.
