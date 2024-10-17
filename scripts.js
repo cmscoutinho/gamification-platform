@@ -1,5 +1,5 @@
 function determinarNivel(nota) {
-  if (nota <= 1000) {
+  if (nota < 1000) {
     return "Novato";
   } else if (nota > 1000 && nota <= 1800) {
     return "Mestre";
