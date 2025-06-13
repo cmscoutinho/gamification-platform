@@ -21,7 +21,7 @@ var alunosData = [
   { nome: "Pedro Alves", pontos: 900 },
   { nome: "Ana Pereira", pontos: 2000 },
   { nome: "Lucas Costa", pontos: 1850 },
-  { nome: "Luiza Lima", pontos: 1000 },
+  { nome: "Luiza Lima", pontos: 1850 },
   { nome: "Gustavo Santos", pontos: 1650 },
   { nome: "Fernanda Teixeira", pontos: 1400 },
   { nome: "Rafael Barros", pontos: 2100 },
